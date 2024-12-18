@@ -1,0 +1,32 @@
+# Issue 2: Network Printer Not Showing Up
+
+## Description:
+After the latest Windows 10 update, Sarah's network printer, which was previously accessible, no longer shows up in the list of available printers. This issue may be caused by connectivity issues, outdated drivers, or Windows configuration changes after the update.
+
+## Solution:
+
+### Step 1: Check Printer Connection
+- Ensure that the printer is connected to the same Wi-Fi network as the computer.
+  1. Check the printer's display panel or control settings to confirm the network connection.
+  2. Restart the printer and check if it reconnects to the correct Wi-Fi network.
+
+### Step 2: Use the Printer Troubleshooter
+- Run the built-in **Printer Troubleshooter** to automatically detect and fix printer issues.
+  1. Go to **Settings** > **Update & Security** > **Troubleshoot**.
+  2. Select **Printer** under **Find and fix other problems**.
+  3. Follow the on-screen instructions.
+
+### Step 3: Restart the Print Spooler Service
+- Restarting the **Print Spooler** service can often fix printer connection issues.
+  1. Press **Win + R**, type `services.msc`, and press Enter.
+  2. Find **Print Spooler** and right-click to select **Restart**.
+
+### Step 4: Check for Printer Driver Updates
+- Update or reinstall printer drivers to ensure compatibility with the latest Windows 10 update.
+  1. Go to **Device Manager** > **Printers** > Right-click on the printer > **Update Driver**.
+
+## Websites Used:
+
+https://h30434.www3.hp.com/t5/LaserJet-Printing/Printer-connected-to-network-but-not-showing-up-as-available/td-p/6387489
+
+https://community.spiceworks.com/t/printer-not-showing-up-when-searching-for-network-printer/92497
