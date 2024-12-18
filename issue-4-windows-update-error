@@ -1,0 +1,30 @@
+# Issue 4: "We Couldn't Complete the Update. Undoing Changes."
+
+## Solution:
+
+### Step 1: Run the Windows Update Troubleshooter
+- Run the built-in **Windows Update Troubleshooter** to detect and fix issues automatically.
+  1. Go to **Settings** > **Update & Security** > **Troubleshoot**.
+  2. Select **Windows Update** and click **Run the troubleshooter**.
+
+### Step 2: Clear the Windows Update Cache
+- Clear corrupted update files by stopping the **Windows Update** service and deleting the contents of the **SoftwareDistribution\Download** folder.
+  1. Open **services.msc**, right-click on **Windows Update**, and select **Stop**.
+  2. Navigate to `C:\Windows\SoftwareDistribution\Download` and delete all files.
+  3. Restart the **Windows Update** service and try updating again.
+
+### Step 3: Use SFC and DISM Tools
+- Run **System File Checker (SFC)** and **DISM** tools to repair corrupted system files.
+  1. Open **Command Prompt (Admin)** and run `sfc /scannow`.
+  2. Run `DISM /Online /Cleanup-Image /RestoreHealth` if needed.
+
+### Step 4: Manually Install the Windows Update
+- Manually download and install the update from the **Microsoft Update Catalog**.
+  1. Go to the **Microsoft Update Catalog** and search for the update code (e.g., KB4566782).
+  2. Download the appropriate version and install it manually.
+
+## Websites Used:
+
+https://answers.microsoft.com/en-us/windows/forum/all/we-couldnt-complete-the-updates-undoing-changes/08b0c9b7-1405-4d24-a417-8d5e6a6d396d
+
+https://softwarekeep.com/blogs/troubleshooting/fix-we-couldnt-complete-the-updates-undoing-changes?srsltid=AfmBOor_IBcVHWNMqd_Ga4sof99CPMFjdmNb6loQlTqj1u3r04YP6YHu
