@@ -1,0 +1,37 @@
+# Issue 1: Computer Takes a Long Time to Boot Up
+
+
+## Solution:
+### Step 1: Disable Unnecessary Startup Programs
+- Use Task Manager to disable unnecessary programs from loading during startup.
+  1. Right-click the **taskbar** and select **Task Manager**.
+  2. Go to the **Startup** tab.
+  3. Disable unnecessary programs by right-clicking and selecting **Disable**.
+
+### Step 2: Check for Windows Updates
+- Ensure that all updates have been installed correctly.
+  1. Go to **Settings** > **Update & Security** > **Windows Update**.
+  2. Click **Check for Updates**.
+
+### Step 3: Use the Disk Cleanup Tool
+- Run Disk Cleanup to remove unnecessary files.
+  1. Press **Win + S**, type **Disk Cleanup**, and open the tool.
+  2. Select **C:** (or the system drive) and click **OK**.
+  3. Choose the files to delete and click **OK**.
+
+### Step 4: Check for Corrupted System Files
+- Run the **SFC** and **DISM** tools to repair system files.
+  1. Open **Command Prompt** as **Administrator**.
+  2. Run:
+     ```bash
+     sfc /scannow
+     ```
+     Then run:
+     ```bash
+     DISM /Online /Cleanup-Image /RestoreHealth
+
+     ## Websites Used:
+     
+     https://forums.tomshardware.com/threads/computer-takes-5-minutes-to-boot-up-and-shut-down.3615957/
+     
+     https://www.reddit.com/r/Windows10/comments/3rhh9d/my_computer_takes_five_minutes_to_start_up/?rdt=61040
