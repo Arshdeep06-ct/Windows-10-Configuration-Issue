@@ -1,0 +1,30 @@
+# Issue 3: Inventory Management Software Crashes
+
+## Solution:
+
+### Step 1: Run the Program Compatibility Troubleshooter
+- Run the **Program Compatibility Troubleshooter** to fix any compatibility issues.
+  1. Right-click the program shortcut and select **Troubleshoot compatibility**.
+  2. Follow the prompts to apply the recommended settings.
+
+### Step 2: Check for Software Updates
+- Ensure the software is up to date with the latest patches.
+  1. Open the software and check for updates.
+  2. Download and install any available updates.
+
+### Step 3: Check System Resources
+- Monitor system resources like **CPU**, **RAM**, and **Disk** usage during report generation.
+  1. Open **Task Manager** (Ctrl + Shift + Esc).
+  2. Check the **Performance** tab for resource usage.
+  3. Consider upgrading hardware if resources are maxed out.
+
+### Step 4: Check the Event Viewer for Errors
+- Check the **Event Viewer** for error logs related to the software crashes.
+  1. Open **Event Viewer** > **Windows Logs** > **Application**.
+  2. Look for error logs related to the software.
+
+## Websites Used:
+
+https://www.hopstack.io/guides/inventory-management
+
+https://www.unleashedsoftware.com/product/inventory-management-software/what-is-inventory-management-software/
